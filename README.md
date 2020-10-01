@@ -1,8 +1,16 @@
 # YouTube Video Lister
 
-A python app which searchs predefined query on YouTube using YT Data API and saves it in MongoDB and lists it on dashboard.
+A python app which searches predefined query on YouTube using YT Data API and saves it in MongoDB and lists it on dashboard.
 
-It searches asynchronously in backgroud using Python asyncio and threading library.
+It searches asynchronously in background using Python asyncio and threading library.
+
+## Asyncio Library
+
+The asyncio module provides a framework that revolves around the event loop.It is designed to use coroutines and futures to simplify asynchronous code and make it almost as synchronous code as there are no callbacks.
+
+## Threading Library
+
+Threading in python is used to run multiple threads (tasks, function calls) at the same time.
 
 Predefined search query: "game"
 
@@ -25,6 +33,9 @@ flask run
 # OR
 gunicorn run:app
 ```
+## Heroku
+
+Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
 ## Deploying on Heroku
 
@@ -52,8 +63,8 @@ heroku open
 4. The data fetched from YT are latest.
 
 ## Tools - Used:
-1.Flask
-2.Pymongo
-3.Flask Caching
+1.Flask (It is a micro web framework written in python) 
+2.Pymongo (It is a python distribution containing tools for working with the MongoDB, and is the recommended way to work with MongoDB from python) 
+3.Flask Caching (It is an extension to Flask that adds caching support for various backends to any Flask application)
 
 Note: [Mini YT LOL](https://mini-yt-lol.herokuapp.com/dashboard) is running on a Free Tier MongoDB and Heroku server.
